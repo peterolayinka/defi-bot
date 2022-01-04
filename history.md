@@ -60,7 +60,7 @@
         * the maker token’s contract address (WETH)
         * the taker token’s contract address (DAI)
       * Sample response from the above request
-    * ![|512x215](upload://4yiFnlZcJCpmtPuCTK22fGOjV45.jpeg)
+    * ![|512x215](https://github.com/peterolayinka/defi-bot/blob/main/OwcZMlnZPROL_AlrXpcayniJKeyLCNgB4EGz9lTWbEdg3GfppdhswyCP304668GOlzCWsC04bW3jQgfAy-PGd-oz3jhKg6LbJPlPyldPfXi6Gi1y2xk_AsZ2YbV0yt3vf1WYkUyF.jpeg)
       * The DAI price of 1 ETH = takerAssetAmount / makerAssetAmount
   * The bot will then query the [1inch exchange](https://1inch.exchange/) DEX aggregator to determine if there is any open order that could be sold for a higher price on any other liquidity pool.
     * Reason for using 1inch
@@ -78,7 +78,7 @@
           * returnAmount: this number divided by the input “amount” parameter is the DAI price for 1 WETH.
       * Arbitrage may take place if this amount is greater than the one returned by 0x.
 
-![|275x397](upload://fwNEXtioP0jcFpcxSOFqZSR2c2E.png)
+![|275x397](https://github.com/peterolayinka/defi-bot/blob/main/aCLs36LvepG22JkBc-DQ79CKn0p7YWPrl3APmLC091ubLnBBn5ehGC0MI87FoQ_Ams95dCMAl-rEir_GI4mLNpZJEiNmsBGpgmrAmp1y-_GmZXk0i3vG6_eOSoqGemcoPxMxRRgq.png)
 
 * However, the above opportunity may not actually exist in practice, because we would need both limit orders to exist at the same time for the arbitrage to work.
 * The author thus proposes to perform the arbitrage using a flash loan.
